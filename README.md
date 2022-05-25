@@ -5,11 +5,11 @@
 
 ### Dominando o Ecossistema .NET com C#
 
-- Tipos de Valores
+#### Tipos de Valores
 
-<p>Variáveis de tipos de valor contêm diretamente seus dados.
++ Variáveis de tipos de valor contêm diretamente seus dados.
 As variáveis têm sua propria copia dos dados é não é possivel que as operações afetem outra variável
-(exeto no caso das variáveis de parâmetro 'ref' e 'out'</p>
+(exeto no caso das variáveis de parâmetro 'ref' e 'out'
 
 ### Principais tipos
 
