@@ -15,9 +15,10 @@ namespace Colecoes.Helper
             {
                 for (int j = 0; j < array.Length - 1; j++)
                 {
-                    if (array[j] > array[j + 1]){
+                    if (array[j] > array[j + 1])
+                    {
                         temp = array[j + 1];
-                        array[j + 1 ] = array[j];
+                        array[j + 1] = array[j];
                         array[j] = temp;
                     }
                 }
@@ -41,6 +42,13 @@ namespace Colecoes.Helper
         {
             //1° Array para copiar | 2 Array de destino | 3 Quantos elementos copiar 
             Array.Copy(array, arrayDestino, array.Length);
+        }
+
+        public bool Existe(int[] array, int valor)
+        {
+            // Retorna um 'bool' se o valor existe dentro do array buscando pelo array
+            // inteiro e verifica se o 'valor' existe
+            return Array.Exists(array, elemento => elemento == valor);
         }
     }
 }

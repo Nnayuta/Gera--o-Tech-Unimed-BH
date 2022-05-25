@@ -12,7 +12,19 @@ namespace Colecoes
             OperacoesArray op = new OperacoesArray();
             int[] array = new int[5] { 6, 3, 8, 1, 9 };
 
-            int[] arrayCopia = new int[10]; 
+            int[] arrayCopia = new int[10];
+
+            int valorProcurado = 5;
+            bool existe = op.Existe(array, valorProcurado);
+
+            if (existe)
+            {
+                System.Console.WriteLine("Encontrei o valor: {0}", valorProcurado);
+            }
+            else
+            {
+                System.Console.WriteLine("Não encontrei o valor: {0}", valorProcurado);
+            }
 
             // System.Console.WriteLine("Array Original:");
             // op.ImprimirArray(array);
@@ -23,13 +35,13 @@ namespace Colecoes
             // System.Console.WriteLine("Array Ordenado:");
             // op.ImprimirArray(array);
 
-            System.Console.WriteLine("Array antes da cópia:");
-            op.ImprimirArray(arrayCopia);
+            // System.Console.WriteLine("Array antes da cópia:");
+            // op.ImprimirArray(arrayCopia);
 
-            op.CopiarArrayPorClasseArray(ref array, ref arrayCopia);
+            // op.CopiarArrayPorClasseArray(ref array, ref arrayCopia);
 
-            System.Console.WriteLine("Array depois da cópia:");
-            op.ImprimirArray(arrayCopia);
+            // System.Console.WriteLine("Array depois da cópia:");
+            // op.ImprimirArray(arrayCopia);
 
 
             // Array multidimencional
