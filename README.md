@@ -1,7 +1,7 @@
 # Geração Tech Unimed-BH | Fullstack | [DIO](https://web.dio.me/track/geracao-tech-unimed-bh-fullstack)
 
 
-## Estou utilizando esté readme para "Anotações"
+## Estou utilizando este readme para "Anotações"
 
 ### Dominando o Ecossistema .NET com C#
 
