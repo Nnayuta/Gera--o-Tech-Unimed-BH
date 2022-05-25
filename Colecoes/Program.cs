@@ -12,13 +12,24 @@ namespace Colecoes
             OperacoesArray op = new OperacoesArray();
             int[] array = new int[5] { 6, 3, 8, 1, 9 };
 
-            System.Console.WriteLine("Array Original:");
-            op.ImprimirArray(array);
+            int[] arrayCopia = new int[10]; 
 
-            op.OrdenarBubbleSort(ref array);
+            // System.Console.WriteLine("Array Original:");
+            // op.ImprimirArray(array);
 
-            System.Console.WriteLine("Array Ordenado:");
-            op.ImprimirArray(array);
+            // op.OrdenarBubbleSort(ref array);
+            // op.OrdenarPorClasseArray(ref array);
+
+            // System.Console.WriteLine("Array Ordenado:");
+            // op.ImprimirArray(array);
+
+            System.Console.WriteLine("Array antes da cópia:");
+            op.ImprimirArray(arrayCopia);
+
+            op.CopiarArrayPorClasseArray(ref array, ref arrayCopia);
+
+            System.Console.WriteLine("Array depois da cópia:");
+            op.ImprimirArray(arrayCopia);
 
 
             // Array multidimencional

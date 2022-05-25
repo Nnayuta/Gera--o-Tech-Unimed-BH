@@ -1,3 +1,5 @@
+using System;
+
 namespace Colecoes.Helper
 {
     public class OperacoesArray
@@ -28,6 +30,17 @@ namespace Colecoes.Helper
             var linha = string.Join(", ", array);
 
             System.Console.WriteLine(linha);
+        }
+
+        public void OrdenarPorClasseArray(ref int[] array)
+        {
+            Array.Sort(array);
+        }
+
+        public void CopiarArrayPorClasseArray(ref int[] array, ref int[] arrayDestino)
+        {
+            //1° Array para copiar | 2 Array de destino | 3 Quantos elementos copiar 
+            Array.Copy(array, arrayDestino, array.Length);
         }
     }
 }
